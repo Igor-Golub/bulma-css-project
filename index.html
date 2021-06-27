@@ -80,10 +80,34 @@
         <div class="container">
             <div class="columns is-8 is-variable">
                 <div class="column is-7-tablet">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident temporibus quidem nostrum
-                        dolore aspernatur maiores. Consectetur modi iste quibusdam minima nam laborum minus temporibus?
-                        Earum inventore aspernatur ducimus quibusdam eum!</p>
+                    <!-- tabbed content -->
+
+                    <div class="tabs is-boxed">
+                        <ul>
+                            <li class="is-active" data-target="product-detailes">
+                                <a>Product details</a>
+                            </li>
+                            <li data-target="delivery-info">
+                                <a>Delivery info</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-2" id="tab-content">
+                        <div id="product-detailes">
+                            <h3 class="is-size-5 title">Product detailes</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit ea blanditiis. A
+                                itaque nemo, rem nobis sunt eveniet repellendus id voluptatum quidem, iusto consectetur.
+                                Sint doloribus ipsam illo suscipit?</p>
+                        </div>
+                        <div id="delivery-info" class="is-hidden">
+                            <h3 class="is-size-5 title">Delivery info</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit ea blanditiis. A
+                                itaque nemo, rem nobis sunt eveniet repellendus id voluptatum quidem, iusto consectetur.
+                                Sint doloribus ipsam illo suscipit?</p>
+                        </div>
+                    </div>
                 </div>
+                
                 <div class="column is-5-tablet">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident temporibus quidem nostrum
                         dolore aspernatur maiores. Consectetur modi iste quibusdam minima nam laborum minus temporibus?
