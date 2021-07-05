@@ -69,8 +69,20 @@
                 <div class="column is-12-tablet is-4-desktop">
                     <div class="is-size-4 mb-4">$10.95</div>
                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, deserunt.</p>
-
-                    <button class="button is-primary">Add to cards</button>
+                    <form>
+                        <div class="field">
+                            <div class="control mb-6">
+                                <div class="select is-dark">
+                                    <select>
+                                        <option>Small (250gr)</option>
+                                        <option>Large (500gr)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="button is-primary">Add to cards</button>
+                    </form>
+                   
 
                 </div>
             </div>
@@ -125,7 +137,7 @@
                         </div>
 
                         <div class="has-text-centered">
-                            <button class="button mt-5 mb-5">Sing In</button>
+                            <button class="button mt-5 mb-5" id="singup">Sing Un</button>
                         </div>
                     </div>
                 </div>
@@ -140,9 +152,7 @@
         <div class="container">
             <h3 class="title has-text-centered is-size-4">Related Products</h3>
             <div class="columns mt-5 is-8 is-variable is-centered">
-
-
-                <div class="column is-4-tablet is-3-desktop">
+               <div class="column is-4-tablet is-3-dekstop">
                     <div class="card">
                         <div class="card-image has-text-centered px-6">
                             <img src="./assets/p1.png" alt="#">
@@ -161,8 +171,6 @@
                         </footer>
                     </div>
                 </div>
-
-
                     <div class="column is-4-tablet is-3-dekstop">
                         <div class="card">
                             <div class="card-image has-text-centered px-6">
@@ -182,8 +190,6 @@
                             </footer>
                         </div>
                     </div>
-
-
                     <div class="column is-4-tablet is-3-dekstop">
                         <div class="card">
                         <div class="card-image has-text-centered px-6">
@@ -201,22 +207,61 @@
                                 <a href="" class="has-text-grey">Dissmis</a>
                             </p>
                         </footer>
-                    </div></div>
-
-                    
-
-                   
-
-
-                    
-
-
-
-
-                
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+
+    <!-- / Cards section -->
+
+    <!-- modal -->
+
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white py-5 px-5">
+            <h3 class="title mb-6 has-text-centered">Join the club</h3>
+            <form>
+                <div class="field">
+                    <label class='label'>Name</label>
+                    <div class="control">
+                        <input type="text" class="input" placeholder="Name">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class='label'>Email</label>
+                    <div class="control">
+                        <input type="email" class="input" placeholder="Email">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <label cladd='checkbox'>
+                            <input type="checkbox">
+                            I agree to the <a href="#">terms & conditions</a>
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <div class="mt-6 has-text-centered">
+                <button class="button is-warning">Sing Up</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- / modal -->
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>Copyright 2021 Coffe Ninja</p>
+        </div>
+    </footer>
+
+    <!-- / footer -->
 
     <script src="./index.js"></script>
 </body>
